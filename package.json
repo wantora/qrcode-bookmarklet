@@ -1,0 +1,38 @@
+{
+  "name": "qrcode-bookmarklet",
+  "description": "QR Code Generator.",
+  "version": "1.0.0",
+  "author": "wantora <wantora@gmail.com>",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/wantora/qrcode-bookmarklet/issues"
+  },
+  "dependencies": {
+    "qrcode-generator": "^1.0.7"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "babelify": "^7.3.0",
+    "bookmarkletter": "^0.1.1",
+    "browserify": "^13.1.1"
+  },
+  "homepage": "https://github.com/wantora/qrcode-bookmarklet#readme",
+  "keywords": [
+    "bookmarklet",
+    "qrcode"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wantora/qrcode-bookmarklet.git"
+  },
+  "scripts": {
+    "build": "browserify index.js -t babelify | bookmarkletter > bookmarklet.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
